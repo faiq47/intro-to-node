@@ -1,6 +1,7 @@
 var http = require('http'); 
 var fs   = require('fs');
 var url =require('url');
+const PORT= process.env.PORT || 5000
 
 
  http.createServer(function(req,res){
@@ -22,5 +23,5 @@ var url =require('url');
  	return res.end();
 
 })
- }).listen(8080);
+ }).listen(5000);
  console.log("server is listning 8080!!")
